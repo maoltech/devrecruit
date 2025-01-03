@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: ./devrecruit-server
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./devrecruit-server:/app
+    environment:
+      - DJANGO_SETTINGS_MODULE=devrecruit.settings
+
+  frontend:
+    build:
+      context: ./devrecruit-client
+    ports:
+      - "3000:80"
+    volumes:
+      - ./devrecruit-client:/app
+    environment:
+      - NODE_ENV=production

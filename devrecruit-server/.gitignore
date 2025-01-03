@@ -1,0 +1,57 @@
+# Byte-compiled files
+*.pyc
+__pycache__/
+
+# Environment files
+*.env
+.env
+
+# Virtual environment
+venv/
+env/
+
+# Django-specific files
+db.sqlite3
+/media/
+
+# Logs
+*.log
+
+# Ignore static and media files (if not using a CDN or external storage)
+static/
+media/
+
+# IDE files
+.idea/
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Python egg files
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Test coverage reports
+htmlcov/
+.coverage
+*.cover
+coverage.xml
+.cache
+
+# MyPy cache
+.mypy_cache/
+
+# Pytest cache
+.pytest_cache/
+
+# Celery beat schedule file
+celerybeat-schedule
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
